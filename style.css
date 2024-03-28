@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: #242524;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: #242524;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#name {
+    padding-top: 20px;
+    color: #999;
+}
+
+#welcome {
+    color: #e6e6e6;
+    font-size: 90px;
+    font-weight: 100;
+}
+
+span {
+    font-weight: 400;
+    color: #999;
+}
+
+.description {
+    font-size: 16px;
+    margin: 0 150px 0 200px;
+    width: 70%;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 70px;
+    padding-bottom: 25px;
+    word-break: break-word;
+}
+
+.description:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #e6e6e6;
+}
+
+.fa {
+    font-size: 26px;
+    color: #999;
+}
+
+.fa:hover {
+    font-size: 28px;
+}
+
+.projects {
+    font-size: 16px;
+    color: #999;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+    width: 10%;
+    position: relative;
+    padding: 0px 5px;
+    transition: all 0.25s;
+}
+
+.projects:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #e6e6e6;
+}
+
+.projects:hover {
+    transform: translateY(0);
+}
+
+.projects p {
+    width: 96px;
+    color: #e6e6e6;
+    padding-top: 25px;
+}
+
+.projects a {
+    color: #999;
+    margin: 25px 0;
+    transition: 0.25s;
+}
+
+.projects a:hover {
+    font-size: 22px;
+    transition: 0.25s;
+    color: #e6e6e6;
+    margin: 21px;
+}
+@media only screen and (max-width: 1200px) {
+    #welcome {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .description {
+        margin: 0 20px 20px 40px;
+    }
+    #welcome {
+        font-size: 60px;
+    }
+    .projects {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .description {
+        margin-bottom: 60px;
+        margin-left: 0px;
+    }
+}
